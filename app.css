@@ -89,7 +89,20 @@ i{
     visibility: visible;
 }
 
+.Hosgeldiniz{
+    color: #c5c6c7;
+    text-align: center;
+    padding:260px;
+}
 
+button{
+    background-color: #45a29d91;
+    color: #0b0c10 ;
+    height: 31px;
+    width: 120px;
+    font-size: medium;
+
+}
 
 
 
