@@ -49,8 +49,8 @@ i{
     background-color:  #45a29d91 ;
     border-radius: 10px;
     transition: 0.4s;
-    padding: 8px;
     color:#c5c6c7 ;
+    padding-inline: 5px;
 }
 
 .navbar .hakkimda{
@@ -69,7 +69,7 @@ i{
     visibility: hidden;
     position: absolute;
     top: calc(100% + 10px); 
-    margin-left: 90px;
+    margin-left: 0px;
     background-color: #45a29d91; 
     padding: 15px 15px;
     border-radius: 10px;
@@ -163,4 +163,43 @@ button{
     margin-left: 182px; 
     display: inline;
     font-weight: bold;
+}
+
+.slider{
+    margin-top: 175px;
+    margin-left: 350px;
+}
+.slider img{
+    height: 350px;
+    width: 350px;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.bilgi{
+    background-color:  #45a29d91;
+    height: 350px;
+    width: 500px;
+    margin-top: -354px;
+    margin-left: 700px;
+    font-size: large;
+    padding-top: 70px;
+    border-radius: 7px;
+}
+
+.c-item{
+height: 400px;
+width: 100px;
+margin-top: 70px;
+}
+
+.c-img{
+   padding-top: -200px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.memleket-bilgi{
+    color: #45a29d91 ;
+    margin-top: 10px;
 }
