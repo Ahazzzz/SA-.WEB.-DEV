@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif; 
 }
 
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #0b0c10;
     background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: space-around;
+    background-image: url(images/colorkit.png);
+    color: #c5c6c7;
 }
 
 
@@ -23,7 +25,7 @@ body{
     width: 100%;
     margin-bottom:-10px;
     padding: 10px 30px;
-    background-color: #1F2833;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +33,7 @@ body{
 }
 
 i{
-    color: #c5c6c7;
+    color: #cfa093;
     padding-right: 1px;
 }
 
@@ -42,11 +44,10 @@ i{
     text-decoration: none;
     margin-left: 23px;
     margin-bottom: 10px;
-
 }
 
 .navbar a:hover{
-    background-color:  #45a29d91 ;
+  
     border-radius: 10px;
     transition: 0.4s;
     color:#c5c6c7 ;
@@ -57,7 +58,6 @@ i{
     visibility: hidden;
     position: absolute;
     top: calc(100% + 10px); 
-    background-color: #45a29d91; 
     padding: 15px 20px;
     border-radius: 10px;
     margin-top: -6px;
@@ -70,7 +70,6 @@ i{
     position: absolute;
     top: calc(100% + 10px); 
     margin-left: 0px;
-    background-color: #45a29d91; 
     padding: 15px 15px;
     border-radius: 10px;
     margin-top: -6px;
@@ -99,8 +98,8 @@ i{
 }
 
 button{
-    background-color: #45a29d91;
-    color: #0b0c10 ;
+    background-color: #ac6f82;
+    color:#c5c6c7 ;
     height: 31px;
     width: 120px;
     font-size: medium;
@@ -109,9 +108,10 @@ button{
 .hobiler-bilgi{
     width: 300px;
     height: 400px;
-    background-color: #45a29d91;
+    color: #c5c6c7;
     margin-top: -400px;
     visibility: hidden;
+    background-color:  #ac6f82;
     position: absolute;
     text-align: center;
     border-radius: 15px;
@@ -133,7 +133,7 @@ button{
 }
 
 .cv-sütun{
-    background-color: #45a29d91;
+    background-color: #ac6f82;
     color:  #c5c6c7d2;
     padding-left: 10px;
     
@@ -141,7 +141,7 @@ button{
 
 .cv-satir{
     margin-top: 90px;
-    color:  #45a29d91;
+    color:#c5c6c7;
 }
 
 .line{
@@ -177,7 +177,7 @@ button{
 }
 
 .bilgi{
-    background-color:  #45a29d91;
+    background-color:#c5c6c7;
     height: 350px;
     width: 500px;
     margin-top: -354px;
@@ -200,6 +200,20 @@ margin-top: 70px;
 }
 
 .memleket-bilgi{
-    color: #45a29d91 ;
+    color:#c5c6c7 ;
     margin-top: 10px;
+}
+
+.yemekler img{
+    margin-top: 100px;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.yemekler-bilgi{
+    width: 300px;
+    padding: 20px;
+    color:#c5c6c7 ;
+    opacity: 0.6;
 }
