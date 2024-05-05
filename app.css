@@ -47,7 +47,6 @@ i{
 }
 
 .navbar a:hover{
-  
     border-radius: 10px;
     transition: 0.4s;
     color:#c5c6c7 ;
@@ -59,10 +58,9 @@ i{
     position: absolute;
     top: calc(100% + 10px); 
     padding: 15px 20px;
-    border-radius: 10px;
-    margin-top: -6px;
+    margin-top: -5%;
     transition: 0.1s;
-    margin-left: -110px;
+    margin-left: -13%; 
 }
 
 .navbar .Sehrim {
@@ -71,9 +69,9 @@ i{
     top: calc(100% + 10px); 
     margin-left: 0px;
     padding: 15px 15px;
-    border-radius: 10px;
-    margin-top: -6px;
+    margin-top: -5%;
     transition: 0.1s;
+    margin-left: 21%;
 }
 
 .navbar .hakkimda:hover {
@@ -94,7 +92,7 @@ i{
 .Hosgeldiniz{
     color: #c5c6c7;
     text-align: center;
-    padding:260px;
+    margin-top: 260px;
 }
 
 button{
@@ -133,10 +131,9 @@ button{
 }
 
 .cv-sütun{
-    background-color: #ac6f82;
+    background-color: rgb(73, 72, 72);
     color:  #c5c6c7d2;
     padding-left: 10px;
-    
 }
 
 .cv-satir{
@@ -170,10 +167,10 @@ button{
     margin-left: 350px;
 }
 .slider img{
-    height: 350px;
-    width: 350px;
+    height: 400px;
     display: inline-block;
     border-radius: 7px;
+    margin-top: -100%;
 }
 
 .bilgi{
@@ -216,4 +213,12 @@ margin-top: 70px;
     padding: 20px;
     color:#c5c6c7 ;
     opacity: 0.6;
+}
+
+form{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+form input{
+    border-radius: 15px
 }
