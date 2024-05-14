@@ -10,27 +10,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body style="background-color: #0b0c10; overflow-x: hidden; ">
+<body style="background-color: #0b0c10; overflow-x:hidden; ">
   <header class="main">
     <a href="main.html#sayfa-1"><i class="fa-solid fa-house-chimney"></i></a>
-    <nav class="navbar">
-        
+      <nav class="navbar">
         <a href="main.html"  class="hover"> <i><i class="fa-solid fa-user"></i></i> Hakkimda</a>
         <div class="hakkimda">
             <a href="main.html#sayfa-2">Bilgilerim</a>
             <a href="main.html#sayfa-3">Hobilerim</a>
         </div>
-
         <a href="Memleketim.html" class="hover"> <i><i class="fa-solid fa-city"></i> </i>Şehrim</a>
         <div class="Sehrim">
             <a href="Memleketim.html#2-sayfa">Mirasim</a>
             <a href="Memleketim.html#3-sayfa">Harita</a>
         </div>
 
-        <a href="iletisim.html"><i><i class="fa-solid fa-phone"></i></i>İletişim</a>
-        
         <a href="giris.html"><i><i class="fa-solid fa-right-to-bracket"></i></i>Kayit</a>
     </nav>
+    
   </header>
 
   
@@ -98,7 +95,61 @@
           </div>
       </div>
       <div>
+  </div>  
+
+  
+  <div class="container"> 
+    <div style="margin-left: -19%;">
+      <div class="row justify-content-center align-items-center" style="height: 100vh;  margin-top: 4%;">
+        <div class="col-md-6" style="color: whitesmoke;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">İletişim Formu</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="isim" class="text-center">İsminiz</label>
+                            <input type="text" class="form-control mx-auto" id="isim" placeholder="İsminiz">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-center">E-mail</label>
+                            <input type="email" class="form-control mx-auto" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon" class="text-center">Telefon</label>
+                            <input type="tel" class="form-control mx-auto" id="telefon" placeholder="Telefon">
+                        </div>
+                        <div class="form-group text-center">
+                            <label>Cinsiyet</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="erkek">
+                                <label class="form-check-label" for="erkek">Erkek</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="kadin">
+                                <label class="form-check-label" for="kadin">Kadın</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mesaj" class="text-center">Mesajınız</label>
+                            <textarea class="form-control mx-auto" id="mesaj" rows="5" style="border-radius: 5px;"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                            <button type="reset" class="btn btn-secondary">Sıfırla</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+    </div>
+</div>
+</div>
+    
+<section class="footer">
+  <div class="sosyal medya">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
   </div>
+</section>
 
 </body>
 </html>
