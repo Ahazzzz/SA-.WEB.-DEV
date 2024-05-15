@@ -24,7 +24,8 @@
             <div class="Sehrim">
                 <a href="Memleketim.html#2-sayfa">Mirasim</a>
                 <a href="Memleketim.html#3-sayfa">Harita</a>
-            </div>  
+            </div>
+      
             <a href="giris.html"><i><i class="fa-solid fa-right-to-bracket"></i></i>Kayit</a>
         </nav>
       </header>
@@ -53,5 +54,19 @@
       </div>
 
       
+      <script>
+        function validateform() {
+    var name = document.myform.name.value;
+    var password = document.myform.password.value;
+
+    if (name == null || name == "") {
+        alert("Lütfen Email alanını doldurun");
+        return false;
+    } else if (password.length < 9) {
+        alert("Parola en az 9 haneli olmalı.");
+        return false;
+    }
+}  
+      </script>
 </body>
 </html>
