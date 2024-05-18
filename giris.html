@@ -33,40 +33,42 @@
       <div class="Giris">
         <h2 style="text-align: center;">Giriş</h2>
         <div class="input-kutu">
-            <input type="text" placeholder="İsim" required>
+            <input type="email" id="email" placeholder="E-mail" required>
         </div>
         <div class="input-kutu">
-            <br>
-            <input type="password" placeholder="Şifre" required> 
+            <br>    
+            <input type="password" id="password" placeholder="Şifre" required> 
         </div>
-        <br><br>
+        <br>
+        <small style="text-align: center;">Email:G221210074@sakarya.edu.tr, şifre:G221210074</small>
+        <br>
         <div class="beni-hatirla">
            <label for=""><input type="checkbox">Beni Hatırla </label>
-           
         </div>
         <input type="submit" value="Giriş" style="margin-left: 30%; height: 10%; width: 40%; border-radius: 15px;">
-        <div class="Kayıt-ol">
-            
-            <a href="kayıt.html"> Hesabın yok mu? Kayıt ol</a>
-            </div>
-
-
+ 
       </div>
-
       
+
       <script>
         function validateform() {
-    var name = document.myform.name.value;
-    var password = document.myform.password.value;
-
-    if (name == null || name == "") {
-        alert("Lütfen Email alanını doldurun");
-        return false;
-    } else if (password.length < 9) {
-        alert("Parola en az 9 haneli olmalı.");
-        return false;
-    }
-}  
-      </script>
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+            if (email == null || email == "") {
+                alert("Lütfen E-posta alanını doldurun");
+                return false;
+            } else if (!emailRegex.test(email)) {
+                alert("Lütfen geçerli bir E-posta adresi girin");
+                return false;
+            } else if (password.length < 9) {
+                alert("Parola en az 9 karakter olmalıdır.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    
 </body>
 </html>
