@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(images/5462246.png);
+    color: #c5c6c7;
+}
+
+
+.main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom:-10px;
+    padding: 1% 2%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+i{
+    color: #d82f2f;
+    padding-right: 0.01%;
+}
+
+.navbar a {
+    color: #c5c6c7;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 23px;
+    margin-bottom: 10px;
+   
+}
+
+.navbar a:hover{
+    border-radius: 10px;
+    transition: 0.4s;
+    color:#c5c6c7 ;
+    padding-inline: 5px;
+}
+
+.navbar .hakkimda{
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 10px); 
+    padding: 15px 20px;
+    margin-top: -5%;
+    transition: 0.1s;
+    margin-left: -13%; 
+}
+
+.navbar .Sehrim {
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 10px); 
+    margin-left: 0px;
+    padding: 15px 15px;
+    margin-top: -5%;
+    transition: 0.1s;
+    margin-left: 21%;
+}
+
+.navbar .hakkimda:hover {
+    visibility: visible;
+}
+
+.navbar .Sehrim:hover {
+    visibility: visible;
+}
+
+.hover:hover + .hakkimda{
+    visibility: visible;
+}
+.hover:hover + .Sehrim{
+    visibility: visible;
+}
+
+
+.Hosgeldiniz{
+    color: #c5c6c7;
+    text-align: center;
+    margin-top: 260px;
+}
+
+
+button{
+    background-color:#d82f2f;
+    color:whitesmoke ;
+    height: 31px;
+    width: 120px;
+    font-size: medium;
+}
+
+.hobiler-bilgi{
+    width: 300px;
+    height: 400px;
+    color: whitesmoke;
+    margin-top: -400px;
+    visibility: hidden;
+    background-color:#d82f2f;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hobiler{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.hobiler img:hover +.hobiler-bilgi{
+    visibility: visible;
+}
+
+.hobiler img{
+    width: 300px; 
+    height: 400px;
+    border-radius: 15px;
+}
+
+
+.cv-sütun{
+    background-color: rgb(73, 72, 72);
+    color:  #c5c6c7d2;
+    padding-left: 10px;
+}
+
+.cv-satir{
+    margin-top: 90px;
+    color:#c5c6c7;
+}
+
+.line{
+    width: 103%;
+    height: 3px;
+    background-color: #c5c6c7d2;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+}
+
+
+.slider{
+    margin-top: 175px;
+    margin-left: 350px;
+}
+.slider img{
+    height: 400px;
+    display: inline-block;
+    border-radius: 7px;
+    margin-top: -100%;
+}
+
+.bilgi{
+    background-color:#c5c6c7;
+    height: 350px;
+    width: 500px;
+    margin-top: -354px;
+    margin-left: 700px;
+    font-size: large;
+    padding-top: 70px;
+    border-radius: 7px;
+}
+
+.c-item{
+height: 400px;
+width: 100px;
+margin-top: 70px;
+}
+
+.c-img{
+   padding-top: -200px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.memleket-bilgi{
+    color:#c5c6c7 ;
+    margin-top: 10px;
+}
+
+.yemekler img{
+    margin-top: 100px;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.yemekler-bilgi{
+    width: 300px;
+    padding: 20px;
+    color:#c5c6c7 ;
+    opacity: 0.6;
+}
+
+form{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+.Giris{
+    width: 400px;
+    height: 400px;
+    color: #c5c6c7;
+}
+
+
+.input-kutu{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30 0;
+}
+
+.input-kutu input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2 solid whitesmoke;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.beni-hatirla{
+    margin-left: 30px;
+font-size: 17px;
+display: inline;
+}
+
+.Kayıt-ol a{
+    color: black;
+    font-size: 17px;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+.footer .sosyal {
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+    } 
+    
+    .footer .sosyal .medya a{
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 38px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 8px;
+    }
+    .footer .sosyal .medya a i{
+        color: #c5c6c7;
+    }
