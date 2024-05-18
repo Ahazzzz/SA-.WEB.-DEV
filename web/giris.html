@@ -11,13 +11,13 @@
 </head>
 <body style="display: flex; ">
     <header class="main">
-        <a href="main.html#sayfa-1"><i class="fa-solid fa-house-chimney"></i></a>
+        <a href="index.html#sayfa-1"><i class="fa-solid fa-house-chimney"></i></a>
         <nav class="navbar">
             
-            <a href="main.html"  class="hover"> <i><i class="fa-solid fa-user"></i></i> Hakkimda</a>
+            <a href="index.html"  class="hover"> <i><i class="fa-solid fa-user"></i></i> Hakkimda</a>
             <div class="hakkimda">
-                <a href="main.html#sayfa-2">Bilgilerim</a>
-                <a href="main.html#sayfa-3">Hobilerim</a>
+                <a href="index.html#sayfa-2">Bilgilerim</a>
+                <a href="index.html#sayfa-3">Hobilerim</a>
             </div>
     
             <a href="Memleketim.html" class="hover"> <i><i class="fa-solid fa-city"></i> </i>Şehrim</a>
@@ -32,42 +32,46 @@
    
       <div class="Giris">
         <h2 style="text-align: center;">Giriş</h2>
-        <div class="input-kutu">
-            <input type="email" id="email" placeholder="E-mail" required>
-        </div>
-        <div class="input-kutu">
-            <br>    
-            <input type="password" id="password" placeholder="Şifre" required> 
-        </div>
-        <br>
-        <small style="text-align: center;">Email:G221210074@sakarya.edu.tr, şifre:G221210074</small>
-        <br>
-        <div class="beni-hatirla">
-           <label for=""><input type="checkbox">Beni Hatırla </label>
-        </div>
-        <input type="submit" value="Giriş" style="margin-left: 30%; height: 10%; width: 40%; border-radius: 15px;">
- 
-      </div>
+        <form action="http://localhost/giris.php" method="post" onsubmit="return validateform()">
+            <div class="input-kutu">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-kutu">
+                <br>    
+                <input type="password" id="password" name="password" placeholder="Şifre" required> 
+            </div>
+            <br><br>
+            <p style="text-align: center; margin-left: -60%;">Email: G221210074@sakarya.edu.tr, şifre: G221210074</p>
+            
+            <input type="submit" value="Giriş" style="  width: 40%; border-radius: 15px;">
+            <div id="error-message" style="color: red; text-align: center;"></div>
+        </form>
       
 
       <script>
-        function validateform() {
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password').value;
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-            if (email == null || email == "") {
-                alert("Lütfen E-posta alanını doldurun");
-                return false;
-            } else if (!emailRegex.test(email)) {
-                alert("Lütfen geçerli bir E-posta adresi girin");
-                return false;
-            } else if (password.length < 9) {
-                alert("Parola en az 9 karakter olmalıdır.");
-                return false;
-            }
-            return true;
-        }
+       $scope.validateForm = function() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var isValid = true;
+    var errorMessage = "";
+
+    if (email.trim() === "") {
+        errorMessage = "Lütfen E-posta alanını doldurun";
+        isValid = false;
+    } else if (!emailRegex.test(email)) {
+        errorMessage = "Lütfen geçerli bir E-posta adresi girin";
+        isValid = false;
+    } else if (password.length < 9) {
+        errorMessage = "Parola en az 9 karakter olmalıdır.";
+        isValid = false;
+    }
+    if (!isValid) {
+    document.getElementById("error-message").innerText = errorMessage;
+    return false; // Formun submit işlemini durdur
+}
+};
+
     </script>
     
 </body>
