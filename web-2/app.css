@@ -266,10 +266,6 @@ form{
         color: #c5c6c7;
     }
 
-    .movieBox{
-      display: flex;
-      align-content: center;
-    }
     .movieBox img{
         width: 50%;
         height: 70%;
